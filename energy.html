@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="functions.js"></script>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(to bottom, #4a0080, #2a004d);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .nav {
+      background: #3a0066;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .contact_button,
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    .contact_button:hover,
+    .nav a:hover {
+      background: #5c0099;
+      border-radius: 3px;
+    }
+    
+    .content {
+      padding: 30px;
+    }
+    
+    .footer {
+      clear: both;
+      background: #3a0066;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+    }
+    
+    .article-header {
+      border-bottom: 2px solid #4a0080;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    
+    .article-metadata {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+    .article-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .article-image img {
+      max-width: 80%;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+    
+    .article-section {
+      margin: 30px 0;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background: #4a0080;
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 3px;
+      margin-top: 20px;
+    }
+    
+    .back-button:hover {
+      background: #5c0099;
+    }
+    
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .data-table th {
+      background: #4a0080;
+      color: white;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    .data-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    .data-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+	
+	.contact_button {
+		display: inline-block;
+	}
+	
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/assets/umbracorp.png" width="264" height="100" alt="Umbracorp Logo" style="margin-bottom: 10px;">
+      <h1>Umbracorp Energy Research</h1>
+    </div>
+    
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="error.html">Research</a>
+      <a href="error.html">News</a>
+      <p onclick="scrollToBottom()" class="contact_button" >Contact</p>
+    </div>
+    
+    <div class="content">
+      <div class="article-header">
+        <h1>NULLIUM-41: ENERGY APPLICATIONS</h1>
+        <div class="article-metadata">
+          Published: April , 20 | Author: Dr. ██████ ███, Energy Division Director
+        </div>
+      </div>
+      
+      <div class="article-section">
+        <h2>Revolutionizing Energy Production</h2>
+        <p>Since our initial discovery of Nullium-41, Umbracorp's Energy Division has been exploring the isotope's remarkable potential for revolutionizing power generation. The unique atomic structure of Nullium-41 enables unprecedented energy efficiency with minimal waste products, representing a potential paradigm shift in how we think about energy production.</p>
+        
+        <p>Our research team has successfully developed prototype energy cells that harness Nullium-41's unique properties to generate clean, stable power at efficiencies previously thought impossible.</p>
+        
+        <p>Initial testing has yielded remarkable results, with energy conversion rates exceeding 94% - far beyond current technologies. What's more, the resulting power generation produces virtually no harmful byproducts, making it one of the cleanest energy sources we've ever observed.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Core Properties</h2>
+        <p>Nullium-41's energy applications stem from several key properties:</p>
+        
+        <ul>
+          <li><strong>Catalytic Electron Transfer:</strong> Nullium-41 facilitates electron movement with minimal resistance</li>
+          <li><strong>Thermal Stability:</strong> Maintains consistent properties across a wide temperature range (-50°C to 1200°C)</li>
+          <li><strong>Self-Sustaining Reactions:</strong> Under certain conditions, can maintain controlled energy release for extended periods</li>
+          <li><strong>Minimal Decay:</strong> Extraordinarily long half-life with negligible radiation emissions</li>
+        </ul>
+        
+        <p>These properties combine to make Nullium-41 an ideal candidate for next-generation energy applications.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Current Research Focus</h2>
+        <p>Our energy research division is currently focusing on several promising applications:</p>
+        
+        <table class="data-table">
+          <tr>
+            <th>Research Area</th>
+            <th>Description</th>
+            <th>Current Stage</th>
+          </tr>
+          <tr>
+            <td>Micro Power Cells</td>
+            <td>Compact energy sources for portable electronics and medical devices</td>
+            <td>Advanced Prototype</td>
+          </tr>
+          <tr>
+            <td>Grid-Scale Generation</td>
+            <td>Large-scale power production for industrial and municipal applications</td>
+            <td>Conceptual Testing</td>
+          </tr>
+          <tr>
+            <td>Transportation Systems</td>
+            <td>High-efficiency propulsion for vehicles and aircraft</td>
+            <td>Early Research</td>
+          </tr>
+          <tr>
+            <td>Space Applications</td>
+            <td>Compact, long-duration power sources for satellites and deep space missions</td>
+            <td>Theoretical Modelling</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="article-section">
+        <h2>Micro Power Cell Development</h2>
+        <p>Our most advanced application to date is the Nullium-41 Micro Power Cell (MPC), which has demonstrated remarkable results in laboratory testing. These cells, smaller than a standard AA battery, can provide consistent power output for years without significant degradation.</p>
+        
+        <p>Key achievements in our MPC program include:</p>
+        
+        <ul>
+          <li>Sustained power generation exceeding 5 years in accelerated testing environments</li>
+          <li>Output stability within 0.5% variance across temperature extremes</li>
+          <li>Energy density approximately 40x that of current lithium-ion technology</li>
+          <li>Zero harmful emissions or radiation during operation</li>
+        </ul>
+        
+        <p>These cells represent a promising solution for applications requiring long-term, maintenance-free power generation in remote or inaccessible locations.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Challenges and Future Directions</h2>
+        <p>While Nullium-41's energy potential is extraordinary, several challenges remain before commercial applications can be realized:</p>
+        
+        <ul>
+          <li><strong>Production Scaling:</strong> Current extraction methods yield limited quantities of Nullium-41</li>
+          <li><strong>Containment Materials:</strong> Developing suitable materials to house and channel the energy generated</li>
+          <li><strong>Regulatory Framework:</strong> Establishing safety standards and protocols for this new energy source</li>
+          <li><strong>Integration Systems:</strong> Creating interfaces with existing power infrastructure</li>
+        </ul>
+        
+        <p>Our research team is actively addressing these challenges through innovative approaches and collaborative efforts with materials science and engineering partners.</p>
+        
+        <p>The potential of Nullium-41 to transform our energy landscape remains one of our most promising research directions. As we continue to explore its capabilities, we remain committed to responsible development and thorough safety testing.</p>
+      </div>
+      
+      <a href="/" class="back-button">Return to Home</a>
+    </div>
+    
+    <div class="footer">
+      &copy; 20 Umbracorp. All rights reserved.<br>
+      Contact us: research@umbracorp.org
+    </div>
+  </div>
+</body>
+</html>

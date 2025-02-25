@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="functions.js"></script>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(to bottom, #4a0080, #2a004d);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .nav {
+      background: #3a0066;
+      padding: 10px;
+      text-align: center;
+    }
+	
+    .contact_button,
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    .contact_button:hover,
+    .nav a:hover {
+      background: #5c0099;
+      border-radius: 3px;
+    }
+    
+    .content {
+      padding: 30px;
+    }
+    
+    .footer {
+      clear: both;
+      background: #3a0066;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+    }
+    
+    .article-header {
+      border-bottom: 2px solid #4a0080;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    
+    .article-metadata {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+    .article-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .article-image img {
+      max-width: 80%;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+    
+    .article-section {
+      margin: 30px 0;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background: #4a0080;
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 3px;
+      margin-top: 20px;
+    }
+    
+    .back-button:hover {
+      background: #5c0099;
+    }
+    
+    .case-study {
+      background: #f8f4ff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .case-study h4 {
+      color: #4a0080;
+      margin-top: 0;
+    }
+    
+    .side-by-side {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    
+    .side-by-side > div {
+      width: 48%;
+    }
+	
+	.contact_button {
+		display: inline-block;
+	}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/assets/umbracorp.png" width="264" height="100" alt="Umbracorp Logo" style="margin-bottom: 10px;">
+      <h1>Umbracorp Medical Division</h1>
+    </div>
+    
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="error.html">Research</a>
+      <a href="error.html">News</a>
+      <p onclick="scrollToBottom()" class="contact_button" >Contact</p>
+    </div>
+    
+    <div class="content">
+      <div class="article-header">
+        <h1>NULLIUM-11: MEDICAL APPLICATIONS</h1>
+        <div class="article-metadata">
+          Published: May , 20 | Author: Dr. █████ ████, Medical Research Director
+        </div>
+      </div>
+      
+      <div class="article-section">
+        <h2>Transforming Medical Science</h2>
+        <p>Umbracorp's Medical Division has been pioneering research into the therapeutic applications of Nullium-11 since its initial discovery. This remarkable isotope has demonstrated unique properties that are opening new frontiers in diagnostics, treatment, and medical imaging.</p>
+        
+        <p>Working in collaboration with leading medical research institutions, our team has identified several breakthrough applications that could fundamentally transform approaches to challenging medical conditions.</p>
+        
+        <p>The unique biocompatibility and precision targeting capabilities of Nullium-11 make it a promising candidate for developing next-generation medical technologies that are both more effective and less invasive than current options.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Biological Properties</h2>
+        <p>Nullium-11's medical potential stems from several unique biological properties:</p>
+        
+        <ul>
+          <li><strong>Selective Cellular Affinity:</strong> Can be engineered to bind with specific cell types</li>
+          <li><strong>Non-Immunogenic:</strong> Does not trigger immune response in biological systems</li>
+          <li><strong>Quantum Resonance:</strong> Produces detectable signals when exposed to specific frequencies</li>
+          <li><strong>Biocompatibility:</strong> Non-toxic even at relatively high concentrations</li>
+          <li><strong>Controlled Biodegradation:</strong> Can be designed to break down after specific time periods</li>
+        </ul>
+      </div>
+      
+      <div class="article-section">
+        <h2>Key Research Areas</h2>
+        <p>Our medical research team is currently focusing on four primary applications:</p>
+        
+        <div class="side-by-side">
+          <div>
+            <h3>Advanced Diagnostics</h3>
+            <p>Nullium-11 demonstrates unique properties that make it ideal for next-generation medical imaging. When properly formulated, it can selectively bind to specific tissues, providing unprecedented clarity in visualizing structures that are difficult to image with conventional methods.</p>
+            <p>Our research has shown particular promise in neural imaging, where Nullium-11 contrast agents can differentiate between healthy and pathological tissue with remarkable precision.</p>
+          </div>
+          
+          <div>
+            <h3>Targeted Therapeutics</h3>
+            <p>By leveraging Nullium-11's selective binding properties, we've developed experimental delivery systems that can transport therapeutic agents directly to specific cell types while minimizing exposure to healthy tissue.</p>
+            <p>This targeted approach has shown particular promise in preliminary testing for resistant infections and certain cellular abnormalities, allowing for lower dosages and reduced side effects.</p>
+          </div>
+        </div>
+        
+        <div class="side-by-side">
+          <div>
+            <h3>Regenerative Medicine</h3>
+            <p>Perhaps most exciting is Nullium-11's potential in regenerative applications. Our research has demonstrated that certain formulations can create a stable matrix that promotes cellular regeneration while providing structural support.</p>
+            <p>Early experimental results show enhanced healing rates and improved tissue organization in laboratory models of various injuries and degradative conditions.</p>
+          </div>
+          
+          <div>
+            <h3>Precision Monitoring</h3>
+            <p>Nullium-11's unique quantum properties allow for non-invasive, continuous monitoring of physiological processes. By detecting the specific resonance patterns of carefully designed Nullium-11 formulations, we can track biological activities in real-time.</p>
+            <p>This capability opens new possibilities for monitoring chronic conditions and treatment responses without repeated invasive procedures.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="article-section">
+        <h2>Case Study: Neural Imaging Enhancement</h2>
+        <div class="case-study">
+          <h4>Experimental Protocol NL11-237</h4>
+          <p>In our most advanced clinical research trial, specialized Nullium-11 contrast agents were used to enhance visualization of neural structures in patients with complex neurological conditions.</p>
+          
+          <p>The contrast agent demonstrated the ability to cross the blood-brain barrier and selectively bind to specific neural components, providing unprecedented clarity in distinguishing between different types of neural tissue.</p>
+          
+          <p>Compared to conventional imaging methods, the Nullium-11 enhanced scans provided:</p>
+          <ul>
+            <li>140% improvement in contrast between gray and white matter</li>
+            <li>Visualization of structures as small as 0.1mm (previously undetectable)</li>
+            <li>Clear differentiation between active and inactive neural pathways</li>
+            <li>No measurable toxic effects or adverse reactions</li>
+          </ul>
+          
+          <p>This technology shows particular promise for early detection of subtle neural changes and for guiding precision interventions in complex neurological conditions.</p>
+        </div>
+      </div>
+      
+      <div class="article-section">
+        <h2>Regulatory Pathway and Safety</h2>
+        <p>As with all medical applications, safety remains our highest priority. Our research follows rigorous protocols to ensure complete understanding of Nullium-11's biological interactions before advancing to human applications.</p>
+        
+        <p>Current safety data from laboratory and animal studies indicate:</p>
+        <ul>
+          <li>No detectable mutagenic effects</li>
+          <li>Complete clearance from biological systems within predictable timeframes</li>
+          <li>No evidence of tissue accumulation with repeated exposure</li>
+          <li>No immunological reactivity across multiple species testing</li>
+        </ul>
+        
+        <p>We are working closely with regulatory authorities to establish appropriate frameworks for eventual clinical applications, with an emphasis on thorough testing and transparent reporting of all findings.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Looking Forward</h2>
+        <p>The potential of Nullium-11 to transform multiple aspects of medical science represents one of the most promising directions in Umbracorp's research portfolio. As we continue to explore its capabilities, we remain committed to responsible development practices and collaborative approaches.</p>
+        
+        <p>Our timeline for potential medical applications varies by specific use case, with diagnostic applications likely to be the first to reach clinical testing, followed by monitoring technologies and therapeutic applications.</p>
+        
+        <p>We welcome inquiries from qualified medical research institutions interested in potential collaborations as we work to translate these promising discoveries into practical medical applications.</p>
+      </div>
+      
+      <a href="/" class="back-button">Return to Home</a>
+    </div>
+    
+    <div class="footer">
+      &copy; 20 Umbracorp. All rights reserved.<br>
+      Contact us: research@umbracorp.org
+    </div>
+  </div>
+</body>
+</html>

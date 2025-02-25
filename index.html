@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<script src="functions.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(to bottom, #4a0080, #2a004d);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+	
+    .contact_button,
+    .nav {
+      background: #3a0066;
+      padding: 10px;
+      text-align: center;
+    }
+	
+    .contact_button,
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    
+	.contact_button:hover,
+    .nav a:hover {
+      background: #5c0099;
+      border-radius: 3px;
+    }
+    
+    .content {
+      padding: 30px;
+    }
+    
+    .sidebar {
+      float: right;
+      width: 250px;
+      background: #f8f8f8;
+      padding: 15px;
+      margin: 10px;
+      border: 1px solid #ddd;
+    }
+    
+    .footer {
+      clear: both;
+      background: #3a0066;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+    }
+    
+    .article {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .featured-article {
+      background: #f8f4ff;
+      border: 2px solid #4a0080;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .article h3, .featured-article h3 {
+      color: #4a0080;
+      margin-top: 0;
+    }
+    
+    .new-badge {
+      background: #4a0080;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    
+    .read-more {
+      color: #3a0066;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .read-more:hover {
+      text-decoration: underline;
+    }
+	
+	.contact_button {
+		display: inline-block;
+	}
+
+	
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/assets/umbracorp.png" width="264" height="100" alt="Umbracorp Logo" style="margin-bottom: 10px;">
+      <h1>Umbracorp Blog</h1>
+    </div>
+    
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="error.html">Research</a>
+      <a href="error.html">News</a>
+      <p onclick="scrollToBottom()" class="contact_button" >Contact</p>
+    </div>                                       
+    <div class="content">                        
+      
+      <div class="featured-article">
+        <h2>Groundbreaking Discovery: Nullium-67 </h2>
+        <img src="/assets/transnull.png" alt="Nullium-67" style="float: left; margin-right: 15px; padding: 3px; max-width: 130px; height: auto;">
+        <p>Today, we're thrilled to announce our most significant breakthrough yet: the discovery of Nullium-67. This remarkable new isotope exhibits unprecedented anti-anomalous properties that challenge our current understanding of physics and material science.</p>
+        
+        <p>Our research team has been working tirelessly to understand the unique characteristics of this isotope, and the initial findings are nothing short of extraordinary. The anti-anomalous properties we've observed suggest potential applications that could revolutionize multiple fields of science.</p>
+        
+        <p>While we're still in the early stages of understanding Nullium-67's full potential, the implications of this discovery are immense. We look forward to sharing more details as our research progresses.</p>
+        <a href="announcement.html" class="read-more">Read the full announcement →</a>
+      </div>
+      
+      <h3>Understanding the Nullium Family</h3>
+      <p>While Nullium-67 represents our latest breakthrough, our research into the Nullium family of isotopes continues to yield fascinating results across multiple applications:</p>
+      
+      <div class="article">
+        <h3>Nullium-41: Energy Innovation</h3>
+        <p>Our energy research division continues to explore Nullium-41's unique properties in power generation, working towards more efficient and cleaner energy solutions.</p>
+        <a href="energy.html" class="read-more">Learn about energy applications →</a>
+      </div>
+      
+      <div class="article">
+        <h3>Nullium-11: Medical Applications</h3>
+        <p>The medical research team is making steady progress in understanding Nullium-11's medical potential, with promising developments in medical imaging and treatment methodologies.</p>
+        <a href="medical.html" class="read-more">Explore medical research →</a>
+      </div>
+      
+      <h3>Looking Ahead</h3>
+      <p>The discovery of Nullium-67 marks a new chapter in our research journey. We remain committed to responsible scientific advancement and look forward to sharing more updates as we continue to explore the possibilities of the Nullium family of isotopes.</p>
+    </div>
+    
+    <div class="footer">
+      © 20 Umbracorp. All rights reserved.<br>
+      <b>Contact us:</b> research@umbracorp.org
+    </div>
+	</div>
+</body>
+</html>

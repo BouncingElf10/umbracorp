@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="functions.js"></script>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(to bottom, #4a0080, #2a004d);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .nav {
+      background: #3a0066;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .contact_button,
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    .contact_button:hover,
+    .nav a:hover {
+      background: #5c0099;
+      border-radius: 3px;
+    }
+    
+    .content {
+      padding: 30px;
+    }
+    
+    .footer {
+      clear: both;
+      background: #3a0066;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+    }
+    
+    .article-header {
+      border-bottom: 2px solid #4a0080;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    
+    .article-metadata {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+    .article-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .article-image img {
+      max-width: 80%;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+    
+    .article-section {
+      margin: 30px 0;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background: #4a0080;
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 3px;
+      margin-top: 20px;
+    }
+    
+    .back-button:hover {
+      background: #5c0099;
+    }
+    
+    blockquote {
+      font-style: italic;
+      border-left: 3px solid #4a0080;
+      padding-left: 15px;
+      margin-left: 0;
+      color: #555;
+    }
+	
+	.contact_button {
+		display: inline-block;
+	}
+	
+	a {
+	  color: inherit;
+	}
+	
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/assets/umbracorp.png" width="264" height="100" alt="Umbracorp Logo" style="margin-bottom: 10px;">
+      <h1>Umbracorp Research</h1>
+    </div>
+    
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="error.html">Research</a>
+      <a href="error.html">News</a>
+      <p onclick="scrollToBottom()" class="contact_button" >Contact</p>
+    </div>
+    
+    <div class="content">
+      <div class="article-header">
+        <h1>BREAKTHROUGH DISCOVERY: NULLIUM-67</h1>
+        <div class="article-metadata">
+          Published: November , 20 | Author: Dr. ██████ ████, Lead Researcher
+        </div>
+      </div>
+      
+      <div class="article-image">
+        <img src="/assets/transnull.png" height="300" width="auto" alt="Nullium-67 Visualization">
+        <p><em>Nullium-67 contained in a glass capsule.</em></p>
+      </div>
+      
+      <div class="article-section">
+        <h2>A New Chapter in Element Discovery</h2>
+        <p>Today marks a historic moment in the scientific community as Umbracorp formally announces the discovery and isolation of Nullium-67, a breakthrough isotope that exhibits unprecedented anti-anomalous properties. After years of dedicated research, our team has successfully isolated this remarkable substance and begun to document its extraordinary characteristics.</p>
+        
+        <p>Nullium-67 represents the third isotope in the Nullium family, following our earlier discoveries of Nullium-41 and Nullium-11. However, initial testing indicates that Nullium-67 possesses unique properties that significantly distinguish it from its isotopic relatives.</p>
+        
+        <blockquote>"What makes <a href="leak.html">Nullium-67</a> truly extraordinary is its apparent ability to counteract anomalous physical phenomena. We've observed it neutralizing unpredictable quantum fluctuations and stabilizing otherwise unstable particle interactions. The implications for theoretical physics are profound." — Dr. ██████ ████</blockquote>
+      </div>
+      
+      <div class="article-section">
+        <h2>Anti-Anomalous Properties</h2>
+        <p>The most fascinating aspect of Nullium-67 is what our research team has termed its "anti-anomalous" properties. In preliminary testing, Nullium-67 has demonstrated the ability to:</p>
+        
+        <ul>
+          <li>Normalize quantum field irregularities within a 30cm radius</li>
+          <li>Stabilize otherwise unpredictable particle behaviors</li>
+          <li>Counteract entropic acceleration in closed systems</li>
+          <li>Maintain consistent physical properties under extreme conditions</li>
+        </ul>
+        
+        <p>These properties suggest potential applications in stabilizing experimental environments, calibrating sensitive equipment, and potentially even counteracting unpredictable phenomena in various scientific and industrial contexts.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Discovery Process</h2>
+        <p>The discovery of Nullium-67 occurred during a series of experiments designed to probe the boundaries of the previously discovered Nullium isotopes. Our research team observed unexpected stabilization effects during high-energy particle acceleration tests, which led to the isolation of this new isotope.</p>
+        
+        <p>The extraction and purification process required developing entirely new methodologies, as Nullium-67 exhibits different physical and chemical behaviors from both Nullium-41 and Nullium-11. Our materials science division has pioneered new isolation techniques specifically tailored to the unique properties of this isotope.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Potential Applications</h2>
+        <p>While research is still in early stages, our team has identified several promising areas where Nullium-67's unique properties could prove revolutionary:</p>
+        
+        <ul>
+          <li><strong>Advanced Physics Research:</strong> Creating stable environments for quantum experiments</li>
+          <li><strong>Precision Instrumentation:</strong> Calibrating sensitive equipment against environmental fluctuations</li>
+          <li><strong>Material Science:</strong> Developing new composites with predictable, stable properties</li>
+          <li><strong>Theoretical Applications:</strong> Testing the boundaries of current physical laws</li>
+        </ul>
+        
+        <p>As with all Nullium isotopes, our research team is proceeding with careful methodical testing before any applied uses are implemented.</p>
+      </div>
+      
+      <div class="article-section">
+        <h2>Looking Ahead</h2>
+        <p>Umbracorp has established a dedicated Nullium-67 research division to explore the full potential of this remarkable discovery. We're also initiating collaborative projects with select research institutions to expand the scope of investigation.</p>
+        
+        <p>We are committed to responsible scientific advancement and will continue to share updates as our understanding of Nullium-67 deepens. The discovery represents a new frontier in our understanding of matter and its properties.</p>
+        
+        <p>For inquiries regarding research opportunities or more information about Nullium-67, please contact our research department through the official channels.</p>
+      </div>
+      
+      <a href="/" class="back-button">Return to Home</a>
+    </div>
+    
+    <div class="footer">
+      &copy; 20 Umbracorp. All rights reserved.<br>
+      Contact us: research@umbracorp.org
+    </div>
+  </div>
+</body>
+</html>

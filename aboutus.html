@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<script src="functions.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(to bottom, #4a0080, #2a004d);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+	
+    .contact_button,
+    .nav {
+      background: #3a0066;
+      padding: 10px;
+      text-align: center;
+    }
+	
+    .contact_button,
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    
+	.contact_button:hover,
+    .nav a:hover {
+      background: #5c0099;
+      border-radius: 3px;
+    }
+    
+    .content {
+      padding: 30px;
+    }
+    
+    .sidebar {
+      float: right;
+      width: 250px;
+      background: #f8f8f8;
+      padding: 15px;
+      margin: 10px;
+      border: 1px solid #ddd;
+    }
+    
+    .footer {
+      clear: both;
+      background: #3a0066;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+    }
+    
+    .article {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .featured-article {
+      background: #f8f4ff;
+      border: 2px solid #4a0080;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    
+    .article h3, .featured-article h3 {
+      color: #4a0080;
+      margin-top: 0;
+    }
+    
+    .new-badge {
+      background: #4a0080;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    
+    .read-more {
+      color: #3a0066;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .read-more:hover {
+      text-decoration: underline;
+    }
+	
+	.contact_button {
+		display: inline-block;
+	}
+
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 30px 0;
+    }
+    
+    .department {
+      width: 45%;
+      margin-bottom: 30px;
+      background: #f8f4ff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    
+    .timeline {
+      margin: 40px 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+    }
+    
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #4a0080;
+      left: 31px;
+      margin-left: -1.5px;
+    }
+    
+    .timeline > li {
+      position: relative;
+      margin-bottom: 50px;
+      min-height: 50px;
+      padding-left: 70px;
+    }
+    
+    .timeline > li:before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 20px;
+      background: #5c0099;
+      border: 4px solid #f8f4ff;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    
+    .timeline-year {
+      font-weight: bold;
+      color: #4a0080;
+    }
+	
+	blockquote {
+      font-style: italic;
+      border-left: 3px solid #4a0080;
+      padding-left: 15px;
+      margin-left: 0;
+      color: #000;
+	  font-size: 40px;
+	  margin-block-start: 0.2em;
+      margin-block-end: 0.2em;
+	  font-family: 'Courier New', monospace;
+    }
+
+	a {
+	  color: inherit;
+	}
+	
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/assets/umbracorp.png" width="264" height="100" alt="Umbracorp Logo" style="margin-bottom: 10px;">
+      <h1>About Umbracorp</h1>
+    </div>
+    
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="error.html">Research</a>
+      <a href="error.html">News</a>
+      <p onclick="scrollToBottom()" class="contact_button">Contact</p>
+    </div>
+    
+    <div class="content">
+      <div class="featured-article">
+        <h2>Our Mission</h2>
+        <p>Umbracorp stands at the frontier of scientific discovery, dedicated to pushing the boundaries of what's possible in theoretical and applied physics. Founded on principles of rigorous inquiry and ethical innovation, we explore the unknown to unlock solutions for humanity's greatest challenges.</p>
+        
+        <p>Our pioneering work with the Nullium family of isotopes represents just one facet of our broader mission to transform scientific understanding into practical applications that benefit society while maintaining the highest standards of safety and responsibility.</p>
+      
+		<blockquote><b>We own the <a href="lies.txt">Future</a>.</b></blockquote>
+	  </div>
+      
+      <h2>Our History</h2>
+      <p>For decades, Umbracorp has maintained a commitment to excellence in scientific research and development. Our journey is defined by persistent curiosity and breakthrough discoveries:</p>
+      
+      <ul class="timeline">
+        <li>
+          <div class="timeline-year">19</div>
+          <p>Umbracorp established as a small research collective by a group of [REDACTED] physicists focused on theoretical approaches to exotic matter.</p>
+        </li>
+        
+        <li>
+          <div class="timeline-year">19</div>
+          <p>First major breakthrough with the identification of Nullium-11, opening new possibilities in medical applications.</p>
+        </li>
+        
+        <li>
+          <div class="timeline-year">20</div>
+          <p>Discovery of Nullium-41, revolutionizing our approach to energy research. Expanded facilities to accommodate growing research programs.</p>
+        </li>
+        
+        <li>
+          <div class="timeline-year">20</div>
+          <p>Formation of the Theoretical Physics Division, dedicated to exploring anomalous and anti-anomalous properties of the Nullium isotope family.</p>
+        </li>
+        
+        <li>
+          <div class="timeline-year">20</div>
+          <p>Groundbreaking discovery of Nullium-67, representing our most significant achievement to date in understanding anti-anomalous phenomena.</p>
+        </li>
+      </ul>
+      
+      <h2>Our Structure</h2>
+      <p>Umbracorp operates through specialized research divisions, each contributing to our overarching mission while maintaining focus on specific applications and discoveries:</p>
+      
+      <div class="team-section">
+        <div class="department">
+          <h3>Theoretical Research Division</h3>
+          <p>Our theoretical team explores fundamental questions about matter, energy, and the fabric of reality. Led by our Chief Theoretical Physicist, this division's work lays the foundation for our most ambitious projects.</p>
+        </div>
+        
+        <div class="department">
+          <h3>Applied Physics Department</h3>
+          <p>Translating theoretical insights into practical applications, this department bridges the gap between discovery and implementation, with specialized teams focused on materials science and isotope stabilization.</p>
+        </div>
+        
+        <div class="department">
+          <h3>Medical Research Unit</h3>
+          <p>Dedicated to exploring the medical applications of our discoveries, particularly the potential of Nullium-11 in diagnostic and therapeutic contexts.</p>
+        </div>
+        
+        <div class="department">
+          <h3>Energy Innovation Lab</h3>
+          <p>Working to harness the unique properties of Nullium-41, this lab aims to develop cleaner, more efficient energy solutions to address global challenges.</p>
+        </div>
+      </div>
+      
+      <h2>Our Approach</h2>
+      <p>At Umbracorp, we believe in:</p>
+      
+      <div class="article">
+        <h3>Ethical Innovation</h3>
+        <p>Every discovery is evaluated not just for its scientific merit, but for its potential impact on society and the environment. Our Ethics Committee reviews all research protocols and applications.</p>
+      </div>
+      
+      <div class="article">
+        <h3>Collaborative Discovery</h3>
+        <p>While maintaining necessary confidentiality around sensitive research, we actively collaborate with academic institutions and research partners to accelerate scientific progress.</p>
+      </div>
+      
+      <div class="article">
+        <h3>Long-term Vision</h3>
+        <p>Our research horizons extend decades into the future. We balance immediate applications with foundational work that may not bear fruit for generations.</p>
+      </div>
+      
+      <p>As we continue our work with the Nullium family of isotopes, particularly our recent breakthrough with Nullium-67, we remain committed to responsible advancement of scientific knowledge and its applications for the benefit of humanity.</p>
+    </div>
+    
+    <div class="footer">
+      © 20 Umbracorp. All rights reserved.<br>
+      <b>Contact us:</b> research@umbracorp.org
+    </div>
+  </div>
+</body>
+</html>
